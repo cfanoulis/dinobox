@@ -1,11 +1,8 @@
 <p align="center">
-  insert image here
+  <image src="https://github.com/cfanoulis/dinobox/blob/main/.github/readme-assets/dinobox.png?raw=true"></image>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <h1 align="center">dinobox</h1>
+  <h2 align="center">dinobox</h2>
 
 ## Installation
 
