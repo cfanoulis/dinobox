@@ -23,15 +23,6 @@ $ yarn start:dev
 $ yarn start:prod
 ```
 
-## Test
+# Note for people devving
 
-```bash
-# unit tests
-$ yarn test
-
-# e2e tests
-$ yarn test:e2e
-
-# test coverage
-$ yarn test:cov
-```
+PLEASE DONT COMMIT TEST FILES - We use yarn v2 and autoclean isnt implemented yet
