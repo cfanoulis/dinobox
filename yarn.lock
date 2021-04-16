@@ -330,6 +330,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/anymatch@npm:*":
+  version: 1.3.1
+  resolution: "@types/anymatch@npm:1.3.1"
+  checksum: 1647865e528a168f66f57a077e9651c10a4c172b656cc3686fddf176555d42ca0a1647bfc626ea2fceb68fc7701426ab708224be1762b4a5216fe8368ffdba3c
+  languageName: node
+  linkType: hard
+
 "@types/body-parser@npm:*":
   version: 1.19.0
   resolution: "@types/body-parser@npm:1.19.0"
@@ -462,6 +469,63 @@ __metadata:
     "@types/mime": ^1
     "@types/node": "*"
   checksum: f261127514057b5c038d76259128d7b765dd92bfeaf769d05b8ddf5f254d066ce6142a935e2fc707bb3009d6544a979591852f0d135d0ed4d0c56db08738df6b
+  languageName: node
+  linkType: hard
+
+"@types/source-list-map@npm:*":
+  version: 0.1.2
+  resolution: "@types/source-list-map@npm:0.1.2"
+  checksum: 191f0e3b056b481e7a0bbb38f3d5b54b015556e38075726ca2637a35d3694df85cd16761b1b188729ac687a55aec3cbc2b07033ac090bcc13efe09ad10a3e935
+  languageName: node
+  linkType: hard
+
+"@types/tapable@npm:^1":
+  version: 1.0.7
+  resolution: "@types/tapable@npm:1.0.7"
+  checksum: af30bb7429d590c7df1f3f5b8ef55fcf2c5498cd2d972c40b0ee543a2e7c3df988b5ac29e231b22b09b712ea1df3dbf3eb145dcbbd43544534cbfb0f1cebdfac
+  languageName: node
+  linkType: hard
+
+"@types/uglify-js@npm:*":
+  version: 3.13.0
+  resolution: "@types/uglify-js@npm:3.13.0"
+  dependencies:
+    source-map: ^0.6.1
+  checksum: 1815a3628aeed41212ae411728267a29e99a309f0cff4d84f90bc7188125be0996d81ca4e7c747751f598749edad426a4c1fe9d78df2110022ca24455d45ca43
+  languageName: node
+  linkType: hard
+
+"@types/webpack-node-externals@npm:^2":
+  version: 2.5.1
+  resolution: "@types/webpack-node-externals@npm:2.5.1"
+  dependencies:
+    "@types/webpack": ^4
+  checksum: f6c29586a12fb1da42d153b2fe7f4fb5e3cde3ad685e69f2144fc1a337b59907ab3b23809d43abe55df14c55b0e93d4c0189f53f02fa10812e94b58fac53abf8
+  languageName: node
+  linkType: hard
+
+"@types/webpack-sources@npm:*":
+  version: 2.1.0
+  resolution: "@types/webpack-sources@npm:2.1.0"
+  dependencies:
+    "@types/node": "*"
+    "@types/source-list-map": "*"
+    source-map: ^0.7.3
+  checksum: 26aba8ae682529be737eff726dcf08019460b180e9d22e80925e65240c908312096067b5547ac3dcb6d7b383a4bf0473eb68d0fd4ff483b17f3147fefce149af
+  languageName: node
+  linkType: hard
+
+"@types/webpack@npm:^4":
+  version: 4.41.27
+  resolution: "@types/webpack@npm:4.41.27"
+  dependencies:
+    "@types/anymatch": "*"
+    "@types/node": "*"
+    "@types/tapable": ^1
+    "@types/uglify-js": "*"
+    "@types/webpack-sources": "*"
+    source-map: ^0.6.0
+  checksum: 5e10ad206accc6a9ec3dbea1b79625d441dc2d93cad61daa8ba77eea0a7b659f7ca605078ec06189e9b7eb48fa244b6cfc617771e8fc579cdd9b26546e8c3120
   languageName: node
   linkType: hard
 
@@ -1648,6 +1712,7 @@ __metadata:
     "@sapphire/prettier-config": ^1.0.9
     "@types/express": ^4.17.11
     "@types/node": ^14.14.31
+    "@types/webpack-node-externals": ^2
     "@typescript-eslint/eslint-plugin": ^4.15.2
     "@typescript-eslint/parser": ^4.15.2
     eslint: ^7.20.0
@@ -1656,12 +1721,14 @@ __metadata:
     prettier: ^2.2.1
     reflect-metadata: ^0.1.13
     rimraf: ^3.0.2
+    run-script-webpack-plugin: ^0.0.11
     rxjs: ^6.6.6
     ts-loader: ^8.0.17
     ts-node: ^9.1.1
     tsconfig-paths: ^3.9.0
     typescript: ^4.1.5
     webpack: ^5.33.2
+    webpack-node-externals: ^2.5.2
   languageName: unknown
   linkType: soft
 
@@ -3972,6 +4039,13 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
+"run-script-webpack-plugin@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "run-script-webpack-plugin@npm:0.0.11"
+  checksum: 4dd99e8afd9f5ae53615c2d7679157bb194e8f28cf131ee6ba51ac72b92cd7546df9b682afabd1e26cd0c32f1dd3ecca193b36bfef5db353e744c28d8781f3c4
+  languageName: node
+  linkType: hard
+
 "rxjs@npm:6.6.3":
   version: 6.6.3
   resolution: "rxjs@npm:6.6.3"
@@ -4199,7 +4273,7 @@ resolve@^1.1.6:
   languageName: node
   linkType: hard
 
-"source-map@npm:0.7.3, source-map@npm:~0.7.2":
+"source-map@npm:0.7.3, source-map@npm:^0.7.3, source-map@npm:~0.7.2":
   version: 0.7.3
   resolution: "source-map@npm:0.7.3"
   checksum: 351ce26ffa1ebf203660c0d70d7566c81e65d2d994d1c2d94da140808e02da34961673ce12ecea9b40797b96fbeb8c70bf71a4ad9f779f1a4fdbba75530bb386
@@ -4771,7 +4845,7 @@ typescript@^4.1.5:
   languageName: node
   linkType: hard
 
-"webpack-node-externals@npm:2.5.2":
+"webpack-node-externals@npm:2.5.2, webpack-node-externals@npm:^2.5.2":
   version: 2.5.2
   resolution: "webpack-node-externals@npm:2.5.2"
   checksum: 79faea373738549ea3a8ce8f0d136629ad1a6f539e154f73f8dfb4f658ad8d24f5e393c03d88dd5821b9b38f493716a1fda581992083e710c41eb956c3d1a028
