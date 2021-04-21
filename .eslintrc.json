@@ -5,5 +5,10 @@
 		"sourceType": "module"
 	},
 	"extends": "@sapphire",
+	"rules": {
+		"@typescript-eslint/no-extraneous-class": ["error", {
+			"allowWithDecorator": true
+		}]
+	},
 	"root": true
 }
