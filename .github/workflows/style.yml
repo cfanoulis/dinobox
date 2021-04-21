@@ -48,6 +48,6 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
-        run: yarn --ignore-scripts --immutable
+        run: yarn install --ignore-scripts --immutable
       - name: Run ESLint
         run: yarn lint --fix=false
