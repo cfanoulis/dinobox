@@ -50,4 +50,4 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
       - name: Build Code
-        run: yarn build:prod
+        run: yarn build
