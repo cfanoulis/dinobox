@@ -11,7 +11,12 @@ const peopleBase = new AirtablePlusPlus({ apiKey: process.env.AIRTABLE_KEY, base
 export class PeopleController {
 	@Post('/lookup')
 	public async lookupPerson(@Body() lookupDetails: IPersonLookupDto) {
-		const [person] = await peopleBase.read({ maxRecords: 1, filterByFormula: `{Slack ID} = "${lookupDetails.slackId!.toUpperCase()}"` });
+		const [person] = await peopleBase.read({
+			maxRecords: 1,
+			filterByFormula: `OR({Slack ID} = "${(lookupDetails.slackId ?? '').toUpperCase()}", {Email} = "${(
+				lookupDetails.email ?? ''
+			).toLowerCase()}")`
+		});
 		return person.id;
 	}
 
