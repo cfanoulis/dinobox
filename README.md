@@ -17,12 +17,8 @@ $ yarn
 $ yarn start
 
 # watch mode
-$ yarn start:dev
+$ yarn start:watch
 
 # production mode
 $ yarn start:prod
 ```
-
-# Note for people devving
-
-PLEASE DONT COMMIT TEST FILES - We use yarn v2 and autoclean isnt implemented yet
