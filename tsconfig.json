@@ -11,6 +11,8 @@
 		"outDir": "./dist",
 		"baseUrl": "./",
 		"incremental": true,
-		"moduleResolution": "node"
-	}
+		"moduleResolution": "node",
+		"importsNotUsedAsValues": "error"
+	},
+	"include": ["src"]
 }
