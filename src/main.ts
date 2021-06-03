@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
+import 'dotenv/config';
 import { AppModule } from './app.module';
 
 declare const module: any;
