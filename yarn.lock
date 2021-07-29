@@ -182,7 +182,7 @@
     multer "1.4.2"
     tslib "2.3.0"
 
-"@nestjs/platform-fastify@^8.0.5":
+"@nestjs/platform-fastify@8.0.5":
   version "8.0.5"
   resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-8.0.5.tgz#b6bdc14fba65a7242f5478497c5eac9da4896003"
   integrity sha512-cqp/gIJ6t39OdoqIsb2s7v2K7t9L4ydmRf9Gf2+Sz5S3+Vzh3KUgFCSS9p4f4zjwfwqZe0g0oalQiNyPoeJDBw==
