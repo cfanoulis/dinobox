@@ -39,7 +39,7 @@
 		"eslint": "7.32.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-plugin-prettier": "3.4.1",
-		"prettier": "2.4.0",
+		"prettier": "2.4.1",
 		"run-script-webpack-plugin": "0.0.11",
 		"ts-loader": "9.2.5",
 		"ts-node": "10.2.1",
