@@ -681,24 +681,23 @@ acorn@^8.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
   integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
 
-airtable-plusplus@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/airtable-plusplus/-/airtable-plusplus-0.3.2.tgz#1572cdceb10f96f0c2fb5222c73f6fd216f94cdf"
-  integrity sha512-lU5fHkybO1+68Z4vQ3vsWe1cDxvCCRbU2db4RFJ6fIdGkIrKlJ2vSjNQ92jgPbsVMOPKVhxTYErsCtmLJVXbPg==
+airtable-plusplus@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/airtable-plusplus/-/airtable-plusplus-0.3.4.tgz#78bbfa4ab5d45a79ba0d95ebafd71df8f57a1aea"
+  integrity sha512-jD5LXZwwewo1noGNBb7Xchu/F1LPLwiQbYkpUQ80DyDUwbYoVFOOfkWklpdyiihyO8SBhXxtpNG7L5zqKwJIfw==
   dependencies:
-    airtable "^0.10.1"
-    tslib "^2.1.0"
+    airtable "^0.11.4"
 
-airtable@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.10.1.tgz#0b311002bb44b39f19bf7c4bd2d47d75c733bf87"
-  integrity sha512-obFW+R3ly2mKtCj0D/xto0ggUvYwdM0RJT3VJ9wvgqoxDkzqg2mNtkuTNfYjF6wWQA0GvoHG9guqzgBBqFjItw==
+airtable@^0.11.4:
+  version "0.11.5"
+  resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.11.5.tgz#eeac9b4bc7fef30663ca2c40153f7587920c2e02"
+  integrity sha512-/fqPA5BZTn5K0J636CfVuyGdNyV6t5RbBDPUBASlb/mlWSJj8WcF9O7/R+BuAlGMsSiKqR9dll99srcQcLEQjg==
   dependencies:
     "@types/node" ">=8.0.0 <15"
     abort-controller "^3.0.0"
     abortcontroller-polyfill "^1.4.0"
-    lodash "^4.17.19"
-    node-fetch "^2.6.1"
+    lodash "^4.17.21"
+    node-fetch "^2.6.7"
 
 ajv-formats@2.0.2:
   version "2.0.2"
@@ -2428,6 +2427,13 @@ node-fetch@^2.6.1:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
+node-fetch@^2.6.7:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
+
 node-releases@^1.1.71:
   version "1.1.73"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.73.tgz#dd4e81ddd5277ff846b80b52bb40c49edf7a7b20"
@@ -3223,6 +3229,11 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
 tree-kill@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
@@ -3285,7 +3296,7 @@ tsconfig-paths@3.13.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@2.3.0, tslib@^2.1.0:
+tslib@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
@@ -3427,6 +3438,11 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+
 webpack-node-externals@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz#1a3407c158d547a9feb4229a9e3385b7b60c9917"
@@ -3503,6 +3519,14 @@ webpack@5.70.0:
     terser-webpack-plugin "^5.1.3"
     watchpack "^2.3.1"
     webpack-sources "^3.2.3"
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which@^2.0.1:
   version "2.0.2"
