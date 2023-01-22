@@ -36,7 +36,7 @@ export interface Database {
 					id: string;
 					phone: string | null;
 					postcode: string | null;
-					slackid: string | null;
+					slack_id: string | null;
 					state: string | null;
 				};
 				Insert: {
@@ -49,7 +49,7 @@ export interface Database {
 					id?: string;
 					phone?: string | null;
 					postcode?: string | null;
-					slackid?: string | null;
+					slack_id?: string | null;
 					state?: string | null;
 				};
 				Update: {
@@ -62,7 +62,7 @@ export interface Database {
 					id?: string;
 					phone?: string | null;
 					postcode?: string | null;
-					slackid?: string | null;
+					slack_id?: string | null;
 					state?: string | null;
 				};
 			};
