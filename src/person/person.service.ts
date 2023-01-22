@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import type { CreatePersonData } from 'src/person/person.interface';
+import type { CreatePersonDto, EditPersonDto } from 'src/person/person.interface';
 import { SupabaseService } from 'src/supabase/supabase.service';
 
 @Injectable()
@@ -25,9 +25,13 @@ export class PersonService {
 		return this.db.select('id,full_name,email,phone,addr_line_1,addr_line_2,city,postcode,state,country').eq('id', id);
 	}
 
-	public async newPerson(createData: CreatePersonData) {
+	public async newPerson(createData: CreatePersonDto) {
 		return this.db
-			.insert({ ...createData, slack_id: (createData.slack_id ?? 'U00001').toUpperCase() })
+			.insert({
+				email: createData.email,
+				full_name: createData.full_name,
+				slack_id: (createData.slack_id ?? 'U00001').toUpperCase()
+			})
 			.select('id,slack_id,full_name,email,phone,country');
 	}
 
@@ -35,7 +39,7 @@ export class PersonService {
 		return this.db.delete().eq('id', id);
 	}
 
-	public async editPerson(id: string, data: Partial<CreatePersonData>) {
+	public async editPerson(id: string, data: Partial<EditPersonDto>) {
 		return this.db.update(data).eq('id', id);
 	}
 }
