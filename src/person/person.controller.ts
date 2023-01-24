@@ -1,5 +1,5 @@
 import { Body, Controller, Delete, Get, HttpCode, HttpException, HttpStatus, Param, ParseUUIDPipe, Patch, Put, ValidationPipe } from '@nestjs/common';
-import type { CreatePersonDto } from 'src/person/person.interface';
+import { CreatePersonDto, EditPersonDto } from 'src/person/person.interface';
 import { PersonService } from 'src/person/person.service';
 import { inspect } from 'util';
 
@@ -10,12 +10,12 @@ export class PersonController {
 	@HttpCode(201)
 	@Put('new')
 	async newPerson(
-		@Body()
-		createData: // new ValidationPipe({
-		// 	whitelist: true,
-		// 	forbidUnknownValues: false
-		// })
-		CreatePersonDto
+		@Body(
+			new ValidationPipe({
+				whitelist: true
+			})
+		)
+		createData: CreatePersonDto
 	) {
 		const { data, error } = await this.personService.newPerson(createData);
 
@@ -41,11 +41,10 @@ export class PersonController {
 		@Param('id', ParseUUIDPipe) id: string,
 		@Body(
 			new ValidationPipe({
-				whitelist: true,
-				forbidUnknownValues: false
+				whitelist: true
 			})
 		)
-		editData: Partial<CreatePersonDto>
+		editData: Partial<EditPersonDto>
 	) {
 		const { data, error } = await this.personService.editPerson(id, editData);
 
